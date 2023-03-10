@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea oninput="enter()" name="" id="txt" cols="30" rows="10"> </textarea>
+
+    <script>
+      let arr = []; //tạo mang để chứa các pt phân tách
+      let textArr = "TOI LA HOC SINH";
+      arr = textArr.split(""); //chia mỗi pt thành mảng con
+      let str = ""; //kai báo biến rỗng để nhập về chuỗi rỗng
+      function enter() {
+        let text = document.getElementById("txt").value;
+        for (let i = 0; i <= text.length; i++) {
+          str = str + arr[i];
+          if (i == 15) {
+            str = "";
+          }
+        }
+        document.getElementById("txt").value = str;
+        str = "";
+      }
+    </script>
+  </body>
+</html>

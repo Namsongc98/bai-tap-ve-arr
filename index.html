@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let listNumber = [1, 2, 3, 4, 5, 6];
+      for (const x in listNumber) {
+        console.log(x);
+      }
+      console.log(listNumber);
+      // truy suất mang
+      listNumber[3];
+      console.log(listNumber[3]);
+      // kiểm tra độ dài mảng
+      let coutOfNum = listNumber.length;
+      // thêm phần tử mảng
+      listNumber.push("nam");
+      console.log;
+      console.log(listNumber[3]);
+      listNumber.splice(2, 2, "khoa");
+      console.log(listNumber.splice(2, 2, "khoa"));
+      let arr1 = [2, 5, 8];
+      let arr2 = [9, 8, 6];
+      let newArr = [...arr1, ...arr2];
+      console.log(newArr);
+    </script>
+  </body>
+</html>

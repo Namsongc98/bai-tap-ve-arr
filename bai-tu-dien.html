@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("nhập từ");
+      let viet = ["hoa", "la", "cho", "meo", "banh my"];
+      let eng = ["flower", "leaf", "dog", "cat", "break"];
+      // let flag = false;
+      // for (i = 0; i < viet.length; i++) {
+      //   if (viet[i] == a) {
+      //     document.write(eng[i]);
+      //     flag = true;
+      //     break;
+      //   } else if (eng[i] == a) {
+      //     document.write(viet[i]);
+      //     break;
+      //   } else {
+      //     flag = true;
+      //   }
+      // }
+      // if ((flag = false)) {
+      //   document.write("ko có");
+      // }
+      if (viet.indexOf(a) > -1) {
+        console.log(eng[viet.indexOf(a)]);
+      } else if (eng.indexOf(a) > -1) {
+        console.log(viet[eng.indexOf(a)]);
+      } else {
+        console.log("không có");
+      }
+    </script>
+  </body>
+</html>
